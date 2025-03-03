@@ -84,6 +84,22 @@ apscheduler = ">=3.2,<4.0"
 django = ">=4.2"
 
 [[package]]
+name = "django-auditlog"
+version = "3.0.0"
+description = "Audit log app for Django"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "django-auditlog-3.0.0.tar.gz", hash = "sha256:9de49f80a4911135d136017123cd73461f869b4947eec14d5e76db4b88182f3f"},
+    {file = "django_auditlog-3.0.0-py3-none-any.whl", hash = "sha256:92db1cf4a51ceca5c26b3ff46997d9e3305a02da1bd435e2efb5b8b6d300ce1f"},
+]
+
+[package.dependencies]
+Django = ">=3.2"
+python-dateutil = ">=2.7.0"
+
+[[package]]
 name = "django-cors-headers"
 version = "4.7.0"
 description = "django-cors-headers is a Django application for handling the server headers required for Cross-Origin Resource Sharing (CORS)."
@@ -363,4 +379,4 @@ devenv = ["check-manifest", "pytest (>=4.3)", "pytest-cov", "pytest-mock (>=3.3)
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<4"
-content-hash = "62ba0fd620bea50cc42ed7e74c2517f7617f61210e0e8d198e01eb03138f2fa3"
+content-hash = "5000db1aa46a84e14e4e997639f878df3d2130010ac89b0c8c922bdf70974408"
