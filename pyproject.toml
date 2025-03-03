@@ -6,7 +6,8 @@ authors = ["Ak Shanal <mshanalak@gmail.com>"]
 packages = [{include = "horilla"}]
 
 [tool.poetry.dependencies]
-python = ">=3.00"
+python = ">=3.10"
+django = "^5.1.6"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
