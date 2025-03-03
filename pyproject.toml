@@ -3,7 +3,7 @@ name = "chaos-hr"
 version = "0.1.0"
 description = ""
 authors = ["Ak Shanal <mshanalak@gmail.com>"]
-packages = [{include = "chaos"}]
+packages = [{include = "horilla"}]
 
 [tool.poetry.dependencies]
 python = ">=3.00"
