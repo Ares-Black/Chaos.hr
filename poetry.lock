@@ -132,6 +132,25 @@ files = [
 Django = ">=4.2"
 
 [[package]]
+name = "django-haystack"
+version = "3.3.0"
+description = "Pluggable search for Django."
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "django_haystack-3.3.0.tar.gz", hash = "sha256:e3ceed6b8000625da14d409eb4dac69894905e2ac8ac18f9bfdb59323ca02eab"},
+]
+
+[package.dependencies]
+Django = ">=3.2"
+packaging = "*"
+
+[package.extras]
+elasticsearch = ["elasticsearch (>=5,<8)"]
+testing = ["coverage", "geopy (==2)", "pysolr (>=3.7)", "python-dateutil", "requests", "whoosh (>=2.5.4,<3.0)"]
+
+[[package]]
 name = "django-mathfilters"
 version = "1.0.0"
 description = "A set of simple math filters for Django"
@@ -217,6 +236,18 @@ files = [
 
 [package.dependencies]
 Django = ">=2.2"
+
+[[package]]
+name = "packaging"
+version = "24.2"
+description = "Core utilities for Python packages"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "packaging-24.2-py3-none-any.whl", hash = "sha256:09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759"},
+    {file = "packaging-24.2.tar.gz", hash = "sha256:c228a6dc5e932d346bc5739379109d49e8853dd8223571c7c5b55260edc0b97f"},
+]
 
 [[package]]
 name = "python-dateutil"
@@ -332,4 +363,4 @@ devenv = ["check-manifest", "pytest (>=4.3)", "pytest-cov", "pytest-mock (>=3.3)
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<4"
-content-hash = "392eba951d55e933518ee4935df960df19627b863b6a822a02d5b261db1b33d6"
+content-hash = "62ba0fd620bea50cc42ed7e74c2517f7617f61210e0e8d198e01eb03138f2fa3"
