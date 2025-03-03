@@ -68,6 +68,22 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-apscheduler"
+version = "0.7.0"
+description = "APScheduler for Django"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "django_apscheduler-0.7.0-py3-none-any.whl", hash = "sha256:869d489775420245c9455d55e35f663c856a33ebfc996d92938f786ffb8730ce"},
+    {file = "django_apscheduler-0.7.0.tar.gz", hash = "sha256:30d61a2ba98615922fc2c9782f84bba342ec0c5ed63384d686d71ea90a1a4318"},
+]
+
+[package.dependencies]
+apscheduler = ">=3.2,<4.0"
+django = ">=4.2"
+
+[[package]]
 name = "django-cors-headers"
 version = "4.7.0"
 description = "django-cors-headers is a Django application for handling the server headers required for Cross-Origin Resource Sharing (CORS)."
@@ -128,6 +144,39 @@ files = [
 ]
 
 [[package]]
+name = "django-model-utils"
+version = "5.0.0"
+description = "Django model mixins and utilities"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "django_model_utils-5.0.0-py3-none-any.whl", hash = "sha256:fec78e6c323d565a221f7c4edc703f4567d7bb1caeafe1acd16a80c5ff82056b"},
+    {file = "django_model_utils-5.0.0.tar.gz", hash = "sha256:041cdd6230d2fbf6cd943e1969318bce762272077f4ecd333ab2263924b4e5eb"},
+]
+
+[package.dependencies]
+Django = ">=3.2"
+
+[[package]]
+name = "django-notifications-hq"
+version = "1.8.3"
+description = "GitHub notifications alike app for Django."
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "django-notifications-hq-1.8.3.tar.gz", hash = "sha256:0f4b216bb382b7c7c4eef273eb211e59c1c6a0ea38cba6077415ac031d330725"},
+]
+
+[package.dependencies]
+django = ">=3.2"
+django-model-utils = ">=3.1.0"
+jsonfield = ">=2.1.0"
+pytz = "*"
+swapper = "*"
+
+[[package]]
 name = "django-simple-history"
 version = "3.8.0"
 description = "Store model history and view/revert changes from admin site."
@@ -143,6 +192,33 @@ files = [
 django = ">=4.2"
 
 [[package]]
+name = "django-widget-tweaks"
+version = "1.5.0"
+description = "Tweak the form field rendering in templates, not in python-level form definitions."
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "django-widget-tweaks-1.5.0.tar.gz", hash = "sha256:1c2180681ebb994e922c754804c7ffebbe1245014777ac47897a81f57cc629c7"},
+    {file = "django_widget_tweaks-1.5.0-py3-none-any.whl", hash = "sha256:a41b7b2f05bd44d673d11ebd6c09a96f1d013ee98121cb98c384fe84e33b881e"},
+]
+
+[[package]]
+name = "jsonfield"
+version = "3.1.0"
+description = "A reusable Django field that allows you to store validated JSON in your model."
+optional = false
+python-versions = ">=3.6"
+groups = ["main"]
+files = [
+    {file = "jsonfield-3.1.0-py3-none-any.whl", hash = "sha256:df857811587f252b97bafba42e02805e70a398a7a47870bc6358a0308dd689ed"},
+    {file = "jsonfield-3.1.0.tar.gz", hash = "sha256:7e4e84597de21eeaeeaaa7cc5da08c61c48a9b64d0c446b2d71255d01812887a"},
+]
+
+[package.dependencies]
+Django = ">=2.2"
+
+[[package]]
 name = "python-dateutil"
 version = "2.9.0.post0"
 description = "Extensions to the standard Python datetime module"
@@ -156,6 +232,18 @@ files = [
 
 [package.dependencies]
 six = ">=1.5"
+
+[[package]]
+name = "pytz"
+version = "2025.1"
+description = "World timezone definitions, modern and historical"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "pytz-2025.1-py2.py3-none-any.whl", hash = "sha256:89dd22dca55b46eac6eda23b2d72721bf1bdfef212645d81513ef5d03038de57"},
+    {file = "pytz-2025.1.tar.gz", hash = "sha256:c2db42be2a2518b28e65f9207c4d05e6ff547d1efa4086469ef855e4ab70178e"},
+]
 
 [[package]]
 name = "six"
@@ -184,6 +272,18 @@ files = [
 [package.extras]
 dev = ["build", "hatch"]
 doc = ["sphinx"]
+
+[[package]]
+name = "swapper"
+version = "1.4.0"
+description = "The unofficial Django swappable models API."
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "swapper-1.4.0-py2.py3-none-any.whl", hash = "sha256:57b8378aad234242542fe32dc6e8cff0ed24b63493d20b3c88ee01f894b9345e"},
+    {file = "swapper-1.4.0.tar.gz", hash = "sha256:9e083af114ee0593241a7b877e3e0e7d3a580454f5d59016c667a5563306f8fe"},
+]
 
 [[package]]
 name = "typing-extensions"
@@ -232,4 +332,4 @@ devenv = ["check-manifest", "pytest (>=4.3)", "pytest-cov", "pytest-mock (>=3.3)
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<4"
-content-hash = "6225a43de0f17afccd1d3dc97cea2351be32156ea3371ab080061c0cfce4e5e4"
+content-hash = "392eba951d55e933518ee4935df960df19627b863b6a822a02d5b261db1b33d6"
