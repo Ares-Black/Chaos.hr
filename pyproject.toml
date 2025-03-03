@@ -1,18 +1,12 @@
-[project]
+[tool.poetry]
 name = "chaos-hr"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Ak Shanal",email = "mshanalak@gmail.com"}
-]
-readme = "README.md"
-requires-python = ">=3.11"
-dependencies = [
-]
-
-[tool.poetry]
+authors = ["Ak Shanal <mshanalak@gmail.com>"]
 packages = [{include = "chaos"}]
 
+[tool.poetry.dependencies]
+python = ">=3.00"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
